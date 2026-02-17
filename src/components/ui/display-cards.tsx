@@ -7,7 +7,7 @@ export interface DisplayCardProps {
     className?: string;
     icon?: React.ReactNode;
     title?: string;
-    desciption?: string;
+    description?: string;
     date?: string;
     iconClassName?: string;
     titleClassName?: string;
@@ -16,7 +16,7 @@ export interface DisplayCardProps {
 
 function DisplayCard({
     className,
-    icon = <Sparkles classNam="size-4 text-blue-300" />,
+    icon = <Sparkles className="size-4 text-blue-300" />,
     title = "Featured",
     description = "Discover amazing content",
     date = "Just now",
