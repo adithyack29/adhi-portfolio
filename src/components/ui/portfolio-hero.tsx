@@ -122,10 +122,10 @@ export default function PortfolioHero() {
     }, []);
 
     const menuItems = [
-        { label: "HOME", href: "#" },
-        { label: "ABOUT", href: "#about" },
-        { label: "PROJECTS", href: "#work" },
-        { label: "CONTACT", href: "#contact" },
+        { label: "Home", href: "#" },
+        { label: "About", href: "#about" },
+        { label: "Projects", href: "#work" },
+        { label: "Contact", href: "#contact" },
     ];
 
     return (
@@ -163,11 +163,7 @@ export default function PortfolioHero() {
                         {isMenuOpen && (
                             <div
                                 ref={menuRef}
-                                className="absolute top-full left-0 w-[200px] md:w-[240px] border-none shadow-2xl mt-2 ml-4 p-4 rounded-lg z-[100]"
-                                style={{
-                                    backgroundColor: "hsl(0 0% 5%)",
-                                    border: "1px solid rgba(255,255,255,0.1)"
-                                }}
+                                className="absolute top-full left-0 w-[200px] md:w-[240px] backdrop-blur-xl bg-black/40 border border-white/10 shadow-2xl mt-2 ml-4 p-4 rounded-lg z-[100]"
                             >
                                 {menuItems.map((item) => {
                                     const isActive =
@@ -248,9 +244,9 @@ export default function PortfolioHero() {
                                 >
                                     {/* Replace this src with your actual photo URL */}
                                     <img
-                                        src="/spiderman.png"
+                                        src="/me.png"
                                         alt="Profile"
-                                        className="w-full h-full object-cover transform scale-[1.8]"
+                                        className="w-full h-full object-cover"
                                         style={{ objectPosition: "top center" }}
                                     />
                                 </div>
