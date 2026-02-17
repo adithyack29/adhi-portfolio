@@ -1,0 +1,47 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  text-align: center;
+  z-index: 1;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--accent-color);
+  text-shadow: 0 0 40px rgba(0, 0, 255, 0.4);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .main {
+    padding: 2rem;
+  }
+}

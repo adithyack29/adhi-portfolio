@@ -1,0 +1,21 @@
+.toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--grid-line);
+    color: var(--text-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle:hover {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    transform: rotate(15deg);
+}
