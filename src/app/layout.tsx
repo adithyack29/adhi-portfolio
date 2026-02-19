@@ -8,7 +8,7 @@ const firaCode = Fira_Code({ subsets: ["latin"], weight: ["400", "700"], variabl
 const antic = Antic({ subsets: ["latin"], weight: "400", variable: "--font-antic" });
 
 export const metadata: Metadata = {
-  title: "Adithya - Protfolio",
+  title: "Adithya - Portfolio",
   description: "Portfolio of Adithya CK - Creative Video Editor, AI Ads Maker, and Web Developer.",
 };
 
