@@ -11,7 +11,7 @@ const skillsCards = [
         date: "",
         iconClassName: "text-blue-500",
         titleClassName: "text-blue-500",
-        className: "[grid-area:stack] hover:-translate-y-12 md:hover:-translate-y-24 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        className: "[grid-area:stack] hover:-translate-y-24 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
         icon: <Code2 className="size-4 text-green-300" />,
@@ -20,7 +20,7 @@ const skillsCards = [
         date: "",
         iconClassName: "text-green-500",
         titleClassName: "text-green-500",
-        className: "[grid-area:stack] translate-y-24 hover:translate-y-12 md:translate-x-12 md:translate-y-10 md:hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        className: "[grid-area:stack] translate-x-12 translate-y-10 hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
         icon: <Clapperboard className="size-4 text-purple-300" />,
@@ -30,14 +30,14 @@ const skillsCards = [
         iconClassName: "text-purple-500",
         titleClassName: "text-purple-500",
         descriptionClassName: "text-base",
-        className: "[grid-area:stack] translate-y-48 hover:translate-y-36 md:translate-x-24 md:translate-y-20 md:hover:translate-y-10",
+        className: "[grid-area:stack] translate-x-24 translate-y-20 hover:translate-y-10",
     },
 ];
 
 
 export default function About() {
     return (
-        <section id="about" className="min-h-screen bg-[#050505] text-white py-24 px-6 md:px-20 flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center overflow-hidden">
+        <section id="about" className="min-h-screen bg-[#050505] text-white py-24 px-6 md:px-20 flex flex-col md:flex-row gap-16 items-center justify-center overflow-hidden">
 
             {/* Left: Intro */}
             <div className="md:w-1/2 z-10">
@@ -51,7 +51,7 @@ export default function About() {
             </div>
 
             {/* Right: Display Cards */}
-            <div className="md:w-1/2 w-full flex items-center justify-center mb-52 md:mb-0">
+            <div className="md:w-1/2 w-full flex items-center justify-center">
                 <DisplayCards cards={skillsCards} />
             </div>
 

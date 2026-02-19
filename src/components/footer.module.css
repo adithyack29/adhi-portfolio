@@ -15,13 +15,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 0 1rem;
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding: 0 2rem;
-    }
 }
 
 .socials {

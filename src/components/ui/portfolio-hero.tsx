@@ -89,20 +89,8 @@ const BlurText: React.FC<BlurTextProps> = ({
 export default function PortfolioHero() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
-    const [isMobile, setIsMobile] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
-
-    useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth < 640);
-        };
-
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-
-        return () => window.removeEventListener('resize', checkMobile);
-    }, []);
 
     // Force dark mode on mount
     useEffect(() => {
@@ -220,21 +208,21 @@ export default function PortfolioHero() {
             {/* Hero Section */}
             <main className="relative min-h-screen flex flex-col overflow-hidden">
                 {/* Centered Main Name - Always Perfectly Centered */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-2">
-                    <div className="relative flex flex-nowrap items-baseline justify-center tracking-tighter">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-4">
+                    <div className="relative flex items-baseline justify-center tracking-tighter">
                         <BlurText
                             text="Ad"
                             delay={100}
                             animateBy="letters"
                             direction="top"
-                            className="font-bold text-[13vw] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
+                            className="font-bold text-[100px] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
                             style={{ color: "#C3E41D", fontFamily: "'Fira Code', monospace" }}
                         />
 
                         {/* Custom 'i' Manually Constructed */}
                         {/* Wrapper MUST have the exact font classes so em/ex units scale correctly */}
                         <div
-                            className="relative inline-flex flex-col items-center mx-[-0.04em] font-bold text-[13vw] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
+                            className="relative inline-flex flex-col items-center mx-[-0.04em] font-bold text-[100px] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
                             style={{ color: "#C3E41D", fontFamily: "'Fira Code', monospace" }}
                         >
                             {/* Ghost 'i' creates the bounding box and baseline */}
@@ -279,7 +267,7 @@ export default function PortfolioHero() {
                             delay={300}
                             animateBy="letters"
                             direction="top"
-                            className="font-bold text-[13vw] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
+                            className="font-bold text-[100px] sm:text-[140px] md:text-[180px] lg:text-[210px] leading-[0.8]"
                             style={{ color: "#C3E41D", fontFamily: "'Fira Code', monospace" }}
                         />
                     </div>
@@ -293,7 +281,7 @@ export default function PortfolioHero() {
                             delay={150}
                             animateBy="words"
                             direction="top"
-                            className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-center transition-colors duration-300 text-neutral-500 hover:text-black dark:hover:text-white px-4"
+                            className="text-[15px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-center transition-colors duration-300 text-neutral-500 hover:text-black dark:hover:text-white"
                             style={{ fontFamily: "'Antic', sans-serif" }}
                         />
                     </div>
