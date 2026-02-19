@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Inline Button component
 const Button = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>(
@@ -160,39 +161,45 @@ export default function PortfolioHero() {
                             )}
                         </button>
 
-                        {isMenuOpen && (
-                            <div
-                                ref={menuRef}
-                                className="absolute top-full left-0 w-[200px] md:w-[240px] backdrop-blur-xl bg-black/40 border border-white/10 shadow-2xl mt-2 ml-4 p-4 rounded-lg z-[100]"
-                            >
-                                {menuItems.map((item) => {
-                                    const isActive =
-                                        item.href === "#"
-                                            ? activeSection === "home"
-                                            : activeSection === item.href.substring(1);
+                        <AnimatePresence>
+                            {isMenuOpen && (
+                                <motion.div
+                                    ref={menuRef}
+                                    initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+                                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                                    exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+                                    transition={{ duration: 0.3, ease: "easeOut" }}
+                                    className="absolute top-full left-0 w-[150px] md:w-[180px] backdrop-blur-xl border border-white/10 shadow-2xl mt-2 ml-4 p-4 rounded-lg z-[100]"
+                                >
+                                    {menuItems.map((item) => {
+                                        const isActive =
+                                            item.href === "#"
+                                                ? activeSection === "home"
+                                                : activeSection === item.href.substring(1);
 
-                                    return (
-                                        <a
-                                            key={item.label}
-                                            href={item.href}
-                                            className="block text-lg md:text-xl font-bold tracking-tight py-1.5 px-2 cursor-pointer transition-colors duration-300 hover:text-white"
-                                            style={{
-                                                color: isActive ? "#C3E41D" : "hsl(0 0% 60%)",
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.color = "#C3E41D";
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.color = isActive ? "#C3E41D" : "hsl(0 0% 60%)";
-                                            }}
-                                            onClick={() => setIsMenuOpen(false)}
-                                        >
-                                            {item.label}
-                                        </a>
-                                    );
-                                })}
-                            </div>
-                        )}
+                                        return (
+                                            <a
+                                                key={item.label}
+                                                href={item.href}
+                                                className="block text-lg md:text-xl font-bold tracking-tight py-1.5 px-2 cursor-pointer transition-colors duration-300 hover:text-white"
+                                                style={{
+                                                    color: isActive ? "#C3E41D" : "hsl(0 0% 60%)",
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.color = "#C3E41D";
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.color = isActive ? "#C3E41D" : "hsl(0 0% 60%)";
+                                                }}
+                                                onClick={() => setIsMenuOpen(false)}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    })}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </div>
 
                     {/* Signature */}
