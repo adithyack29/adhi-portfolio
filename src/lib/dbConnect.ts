@@ -41,7 +41,7 @@ async function dbConnect() {
 
     try {
         cached.conn = await cached.promise;
-        console.log("Connected to MongoDB");
+
     } catch (e) {
         cached.promise = null;
         throw e;

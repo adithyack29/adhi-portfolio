@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
 
 export default function Contact() {
     return (
-        <section id="contact" className="min-h-screen w-full bg-black text-white flex flex-col items-center justify-center pt-32 pb-16">
+        <section id="contact" className="min-h-screen w-full text-white flex flex-col items-center justify-center pt-32 pb-16">
             <div className="w-full flex-grow flex items-center justify-center">
                 <ContactCard
                     title="Let's Create"
@@ -28,7 +28,7 @@ export default function Contact() {
                             className: 'col-span-2',
                         }
                     ]}
-                    className="border-none bg-black rounded-none flex-grow"
+                    className="border-none bg-transparent rounded-none flex-grow"
                 />
             </div>
         </section>

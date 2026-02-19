@@ -37,7 +37,7 @@ const skillsCards = [
 
 export default function About() {
     return (
-        <section id="about" className="min-h-screen bg-[#050505] text-white py-24 px-6 md:px-20 flex flex-col md:flex-row gap-16 items-center justify-center overflow-hidden">
+        <section id="about" className="min-h-screen text-white py-24 px-6 md:px-20 flex flex-col md:flex-row gap-16 items-center justify-center overflow-hidden">
 
             {/* Left: Intro */}
             <div className="md:w-1/2 z-10">

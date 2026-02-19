@@ -17,7 +17,7 @@ export default function Work() {
     const [selectedProject, setSelectedProject] = React.useState<typeof projects[0] | null>(null);
 
     return (
-        <section id="work" className="bg-black text-white min-h-screen py-0 relative">
+        <section id="work" className="text-white min-h-screen py-0 relative">
             <div className="py-24 flex flex-col items-center">
                 <h2 className="text-4xl md:text-6xl font-black uppercase mb-16 text-center">
                     Selected <span className="text-blue-500">Work</span>

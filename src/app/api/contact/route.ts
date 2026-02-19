@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
     try {
         data = await request.json();
-        console.log("Contact Form Submission:", data);
+
 
         // Only attempt DB connection if URI is configured and not the placeholder
         const mongoUri = process.env.MONGODB_URI;

@@ -7,7 +7,7 @@ import Transition from "@/components/Transition";
 export default function Home() {
   return (
     <Transition>
-      <main className="bg-black min-h-screen">
+      <main className="min-h-screen">
         <PortfolioHero />
         <About />
         <Work />

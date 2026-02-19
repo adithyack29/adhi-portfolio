@@ -133,7 +133,7 @@ export default function PortfolioHero() {
             id="home"
             className="min-h-screen text-foreground transition-colors relative"
             style={{
-                backgroundColor: "hsl(0 0% 0%)",
+                backgroundColor: "transparent",
                 color: "hsl(0 0% 100%)",
             }}
         >
