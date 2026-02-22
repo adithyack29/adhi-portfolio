@@ -146,14 +146,14 @@ export default function PortfolioHero() {
                         <button
                             ref={buttonRef}
                             type="button"
-                            className="group p-2 transition-colors duration-300 z-50 text-neutral-500 hover:text-white"
+                            className="group w-12 h-12 flex items-center justify-center transition-colors duration-300 z-50 text-neutral-500 hover:text-white"
                             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
                             {isMenuOpen ? (
                                 <X className="w-8 h-8 transition-colors duration-300" strokeWidth={1.5} />
                             ) : (
-                                <div className="flex flex-col gap-1.5 items-start">
+                                <div className="flex flex-col gap-1.5 items-start justify-center w-8 h-8">
                                     <div className="w-8 h-0.5 bg-current transition-all duration-300 group-hover:w-10"></div>
                                     <div className="w-5 h-0.5 bg-current transition-all duration-300 group-hover:w-8"></div>
                                     <div className="w-8 h-0.5 bg-current transition-all duration-300 group-hover:w-6"></div>
