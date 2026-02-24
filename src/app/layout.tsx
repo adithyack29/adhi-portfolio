@@ -10,6 +10,9 @@ const antic = Antic({ subsets: ["latin"], weight: "400", variable: "--font-antic
 export const metadata: Metadata = {
   title: "Adithya - Portfolio",
   description: "Portfolio of Adithya CK - Creative Video Editor, AI Ads Maker, and Web Developer.",
+  icons: {
+    icon: "/me.png",
+  },
 };
 
 export default function RootLayout({
