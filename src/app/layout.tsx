@@ -10,9 +10,6 @@ const antic = Antic({ subsets: ["latin"], weight: "400", variable: "--font-antic
 export const metadata: Metadata = {
   title: "Adithya - Portfolio",
   description: "Portfolio of Adithya CK - Creative Video Editor, AI Ads Maker, and Web Developer.",
-  icons: {
-    icon: "/me.png",
-  },
 };
 
 export default function RootLayout({
@@ -23,6 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${firaCode.variable} ${antic.variable}`}>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed top-0 left-0 w-full h-full object-cover scale-[1.35] -z-10 pointer-events-none opacity-70"
+        >
+          <source src="/spiderman.mov" type="video/mp4" />
+        </video>
         <CustomCursor />
         {children}
       </body>
