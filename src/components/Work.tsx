@@ -7,8 +7,8 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
     { id: 1, title: "Ai Ads", cat: "AI Ads", video: "/YAC.mov" },
-    { id: 2, title: "Netflix Ad", cat: "Video Editing", video: "/Netflix Ad.mov" },
-    { id: 3, title: "Ai Ads", cat: "AI Ads", video: "/YAC.mov" },
+    { id: 2, title: "Video editing", cat: "Video Editing", video: "/Netflix Ad.mov" },
+    { id: 3, title: "Ai Ads", cat: "AI Ads", video: "/AICPL AD.mov" },
     { id: 4, title: "Motion Graphics", cat: "Motion", video: "/motion UI.mov" },
     { id: 5, title: "3D Motion Edit", cat: "Motion", video: "/motion UI.mov" },
 ];
