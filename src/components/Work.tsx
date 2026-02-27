@@ -19,8 +19,8 @@ export default function Work() {
     return (
         <section id="work" className="text-white min-h-screen py-0 relative">
             <div className="py-24 flex flex-col items-center">
-                <h2 className="text-4xl md:text-6xl font-bold italic mb-16 text-center">
-                    Selected <span className="text-blue-500">Work</span>
+                <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center">
+                    Selected <span className="text-red-500 italic">Work</span>
                 </h2>
                 <div className="text-center text-gray-500 mb-8 animate-bounce uppercase tracking-widest text-xs">
                     ↓ Scroll to Rotate

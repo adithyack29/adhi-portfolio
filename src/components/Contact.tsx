@@ -8,7 +8,11 @@ export default function Contact() {
         <section id="contact" className="min-h-screen w-full text-white flex flex-col items-center justify-center pt-32 pb-16">
             <div className="w-full flex-grow flex items-center justify-center">
                 <ContactCard
-                    title="Let's Create"
+                    title={
+                        <>
+                            Let's <span className="text-red-500 italic">Create</span>
+                        </>
+                    }
                     description="Ready to start your project? Reach out to me directly."
                     contactInfo={[
                         {
