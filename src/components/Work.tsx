@@ -29,8 +29,8 @@ export default function Work() {
 
             <RadialScrollGallery
                 className="!min-h-[800px] w-full"
-                baseRadius={500}
-                mobileRadius={280}
+                baseRadius={400}
+                mobileRadius={240}
                 visiblePercentage={45}
                 scrollDuration={3000}
                 startTrigger="top top"
