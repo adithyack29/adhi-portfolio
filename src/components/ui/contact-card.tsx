@@ -51,14 +51,16 @@ export function ContactCard({
                     </div>
                 </div>
             </div>
-            <div
-                className={cn(
-                    'flex h-full w-full items-center justify-center p-10 md:p-20 border-t md:col-span-1 md:border-t-0 md:border-l border-white/10',
-                    formSectionClassName,
-                )}
-            >
-                {children}
-            </div>
+            {children && (
+                <div
+                    className={cn(
+                        'flex h-full w-full items-center justify-center p-10 md:p-20 border-t md:col-span-1 md:border-t-0 md:border-l border-white/10',
+                        formSectionClassName,
+                    )}
+                >
+                    {children}
+                </div>
+            )}
         </div>
     );
 }
@@ -71,13 +73,13 @@ function ContactInfo({
     ...props
 }: ContactInfoProps) {
     return (
-        <div className={cn('flex items-center gap-3 py-3', className)} {...props}>
-            <div className="bg-muted/40 rounded-lg p-3">
-                <Icon className="h-5 w-5" />
+        <div className={cn('flex items-center gap-4 py-3', className)} {...props}>
+            <div className="bg-muted/40 rounded-lg p-4">
+                <Icon className="h-6 w-6" />
             </div>
             <div>
-                <p className="font-medium">{label}</p>
-                <p className="text-muted-foreground text-xs">{value}</p>
+                <p className="text-xl font-medium">{label}</p>
+                <p className="text-muted-foreground text-base">{value}</p>
             </div>
         </div>
     );
