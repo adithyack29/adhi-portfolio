@@ -5,7 +5,7 @@ import { Video, Globe, FileVideo, Code2, Clapperboard } from "lucide-react";
 
 const skillsCards = [
     {
-        icon: <Video className="size-4 text-blue-300" />,
+        icon: <Video className="size-6 text-blue-300" />,
         title: "AI Video Ads",
         description: "High-converting UGC & AI commercials",
         date: "",
@@ -14,7 +14,7 @@ const skillsCards = [
         className: "[grid-area:stack] hover:-translate-y-24 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
-        icon: <Code2 className="size-4 text-green-300" />,
+        icon: <Code2 className="size-6 text-green-300" />,
         title: "Web Development",
         description: "Modern, high-performance websites",
         date: "",
@@ -23,13 +23,12 @@ const skillsCards = [
         className: "[grid-area:stack] translate-x-12 translate-y-10 hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
-        icon: <Clapperboard className="size-4 text-purple-300" />,
+        icon: <Clapperboard className="size-6 text-purple-300" />,
         title: "Video Editing",
         description: "Engaging short-form storytelling",
         date: "",
         iconClassName: "text-purple-500",
         titleClassName: "text-purple-500",
-        descriptionClassName: "text-base",
         className: "[grid-area:stack] translate-x-24 translate-y-20 hover:translate-y-10",
     },
 ];
@@ -40,9 +39,10 @@ export default function About() {
         <section id="about" className="min-h-screen text-white py-24 px-6 md:px-20 flex flex-col md:flex-row gap-16 items-center justify-center overflow-hidden">
 
             {/* Left: Intro */}
-            <div className="md:w-1/2 z-10">
-                <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed mb-8">
-                    I help brands and creators grow using <strong className="text-white">AI-powered video ads</strong> and <strong className="text-white">high-performance websites</strong>.
+            <div className="md:w-1/2 z-10 pt-16">
+                <p className="text-2xl md:text-3xl text-gray-300 font-light leading-relaxed mb-8">
+                    I help brands and creators grow using <br />
+                    <strong className="text-white">AI-powered video ads</strong> and <strong className="text-white">high-performance websites</strong>.
                     It's not just about making things look good—it's about making them work.
                 </p>
                 {/* <div className="hidden md:block">
